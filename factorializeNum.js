@@ -8,4 +8,5 @@ function factorialize(num){
   }
   return result;
 }
-console.log(factorialize(6));
+//console.log(factorialize(7));
+factorialize(7);
