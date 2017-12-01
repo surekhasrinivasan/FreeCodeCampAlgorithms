@@ -12,4 +12,5 @@ function getIndexToIns(arr, num) {
   return arr.length;
 }
 
-console.log(getIndexToIns([30, 40, 60, 70], 50));
+//console.log(getIndexToIns([30, 40, 60, 70], 50));
+getIndexToIns([20, 30, 40, 60], 50);
