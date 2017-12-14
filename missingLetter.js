@@ -1,3 +1,5 @@
+//missing letter
+
 //1 First Character = first character of input
 //2 Check if next letter is next in alphabet
 //3 Check if another letter available
