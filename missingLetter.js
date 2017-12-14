@@ -25,3 +25,4 @@ function fearNotLetter(str) {
 }
 console.log(fearNotLetter("abce"));
 console.log(fearNotLetter("abcdefghjklmno"));
+console.log(fearNotLetter("lmnpqr"));
