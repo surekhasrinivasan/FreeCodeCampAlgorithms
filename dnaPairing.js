@@ -20,30 +20,47 @@
 //4 Add to strand variable 
 //5 Repeat step 3 for additional chars
 //6 Return strand
+//Method 1 :
+// function pairElement(str) {
+//     var charArray = str.split("");
+//     //console.log(charArray);
+//     var dnaPairArray = [];
+//     //console.log(dnaPairArray);
+//     for(var i = 0; i < charArray.length; i++  ){
+//     if(charArray[i] === "G"){
+//         dnaPairArray.push(["G", "C"]);
+//         //console.log(dnaPairArray);
+//     } else if(charArray[i] === "C"){
+//          dnaPairArray.push(["C", "G"]);
+//          //console.log(dnaPairArray);
+//     } else if(charArray[i] === "A"){
+//         dnaPairArray.push(["A", "T"]);
+//         //console.log(dnaPairArray);
+//     } else if(charArray[i] === "T") {
+//         dnaPairArray.push(["T", "A"]);
+//         //console.log(dnaPairArray);
+//     }
+//     }
+//   return dnaPairArray;
+// }
 
-function pairElement(str) {
-    var charArray = str.split("");
-    //console.log(charArray);
-    var dnaPairArray = [];
-    //console.log(dnaPairArray);
-    for(var i = 0; i < charArray.length; i++  ){
-    if(charArray[i] === "G"){
-        dnaPairArray.push(["G", "C"]);
-        //console.log(dnaPairArray);
-    } else if(charArray[i] === "C"){
-         dnaPairArray.push(["C", "G"]);
-         //console.log(dnaPairArray);
-    } else if(charArray[i] === "A"){
-        dnaPairArray.push(["A", "T"]);
-        //console.log(dnaPairArray);
-    } else if(charArray[i] === "T") {
-        dnaPairArray.push(["T", "A"]);
-        //console.log(dnaPairArray);
-    }
-    }
-  return dnaPairArray;
+// console.log(pairElement("TCG"));
+// console.log(pairElement("ATCGA"));
+
+//Method 2: using Data structure which helps in reducting number of lines of code
+
+function pairElement(str){
+var dnaMap = {C: "G", G:"C", A:"T", T:"A"};
+var charArray = str.split("");
+var dnaPairArray = [];
+
+  for(var i = 0; i < charArray.length; i++){
+	dnaPairArray.push([charArray[i], dnaMap[charArray[i]]]);
+  }
+return dnaPairArray;
 }
-
-console.log(pairElement("TCG"));
+console.log(pairElement("GCG"));
 console.log(pairElement("ATCGA"));
+
+
             
