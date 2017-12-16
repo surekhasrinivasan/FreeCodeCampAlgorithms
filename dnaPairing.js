@@ -47,7 +47,7 @@
 // console.log(pairElement("TCG"));
 // console.log(pairElement("ATCGA"));
 
-//Method 2: using Data structure which helps in reducting number of lines of code
+//Method 2: using Data structure which helps in reducing number of lines of code
 
 function pairElement(str){
 var dnaMap = {C: "G", G:"C", A:"T", T:"A"};
