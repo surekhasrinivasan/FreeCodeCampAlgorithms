@@ -49,18 +49,20 @@
 
 //Method 2: using Data structure which helps in reducing number of lines of code
 
-function pairElement(str){
-var dnaMap = {C: "G", G:"C", A:"T", T:"A"};
-var charArray = str.split("");
-var dnaPairArray = [];
-
-  for(var i = 0; i < charArray.length; i++){
-	dnaPairArray.push([charArray[i], dnaMap[charArray[i]]]);
-  }
-return dnaPairArray;
+function pairElement(str) {
+	var dnaMap = {
+		C: "G",
+		G: "C",
+		A: "T",
+		T: "A"
+	};
+	var charArray = str.split("");
+	var dnaPairArray = [];
+	for (var i = 0; i < charArray.length; i++) {
+		dnaPairArray.push([charArray[i], dnaMap[charArray[i]]]);
+	}
+	return dnaPairArray;
 }
 console.log(pairElement("GCG"));
 console.log(pairElement("ATCGA"));
-
-
             
