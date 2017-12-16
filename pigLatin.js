@@ -8,18 +8,18 @@
 //For Example: Input - "consonant" Output - "onsonantcay" 
 // Input - "algorithm" Output - "algorithmway"
 
-//1 Create an array of vowels and an empty array to hold consonants
-//2 Check if first character of string is a vowel
-//3 If yes, Return string + “way”
-//4 If no,  loop through string to find nearest vowel
-//5 [LOOP] Is character vowel? 
-//6 If no: 
-//7 Add letter to consonants array.
-//8 Check the next letter.
-//9 If yes: 
-//10 Combine all letters in the consonants array into a string.
-//11 Remove all preceding characters before the vowel from the string.
-//12 Return the new trimmed string + consonants + “ay”
+// Create an array of vowels and an empty array to hold consonants
+// Check if first character of string is a vowel
+//       If yes, Return string + “way”
+//       If no,  loop through string to find nearest vowel
+//     [LOOP] Is character vowel? 
+//       If no: 
+//      Add letter to consonants array.
+//  Check the next letter.
+//       If yes: 
+//           Combine all letters in the consonants array into a string.
+//  Remove all preceding characters before the vowel from the string.
+//  Return the new trimmed string + consonants + “ay”
 function translatePigLatin(str) {
 	var vowelArray = ["a", "e", "i", "o", "u"];
 	var consonantArray = [];
