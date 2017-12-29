@@ -1,15 +1,15 @@
-// //Diff Two Arrays
-// // Input: two arrays
+//Diff Two Arrays
+// Input: two arrays
 
-// // Output: new array with items found in only 1 array, but not both 
+// Output: new array with items found in only 1 array, but not both 
 
-// // Steps:
+// Steps:
 
-// // Add an var holder
-// // Check the first array against the second array
-// // Check each one if they have the same value add to the holder
-// // Repeat step 2 to the second array 
-// // If it can't find the holder return the result.
+// Add an var holder
+// Check the first array against the second array
+// Check each one if they have the same value add to the holder
+// Repeat step 2 to the second array 
+// If it can't find the holder return the result.
 function diffArray(arr1, arr2) {
 	var newArr = [];
 	// first loop through arr1 to look for items that are not in arr2  
